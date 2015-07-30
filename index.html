@@ -3,32 +3,31 @@
 <head>
 	<title>react+knockout</title>
 	<link rel="stylesheet" type="text/css" href="style/reset.css">
-	<link rel="stylesheet" type="text/css" href="style/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="style/u.css">
-	<script type="text/javascript" src="vendor/jquery/jquery-2.1.1.min.js"></script>
-	<script src="scripts/u.js"></script>
+	<style>
+		#app{
+			margin: 200px auto;
+			text-align: center;
+		}
+		p{
+			line-height: 50px;
+			font-size: 16px;
+			font-weight: bold;
+		}
+		input{
+			border: none;
+			background-color: #e7e7e7;
+			height: 32px;
+			line-height: 32px;
+			padding: 0 10px;
+		}
+		h2{
+			font-size: 36px;
+			line-height: 60px;
+		}
+	</style>
 </head>
 <body>
-	<div class="container" style="width: 100%;">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="panel panel-success">
-					<div class="panel-heading">
-						<h3 class="panel-title">个人信息</h3>
-					</div>
-					<div class="panel-body">
-						<div type="text" u-meta='{"id":"grid1","data":"dataTable0","type":"grid","editable":true}'>
-							<div options='{"field":"name","dataType":"String","title":"姓名","editType":"string"}'></div>
-							<div options='{"field":"birthtime","dataType":"DateTime","title":"出生日期","editType":"datetime"}'></div>
-							<div options='{"field":"company","dataType":"String","title":"公司","editType":"string"}'></div>
-							<div options='{"field":"email","dataType":"String","title":"邮箱","editType":"string"}'></div>
-							<div options='{"field":"phone","dataType":"String","title":"电话","editType":"string"}'></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	<div id="app"></div>
 	<script type="text/javascript" data-main="scripts/main" src="vendor/require/require.js"></script>
 </body>
 </html>
