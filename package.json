@@ -1,0 +1,23 @@
+{
+  "name": "react-backbone",
+  "version": "1.0.0",
+  "description": "react backbone",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HiLittleCat/react-backbone.git"
+  },
+  "author": "GuoYongfeng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HiLittleCat/react-backbone/issues"
+  },
+  "homepage": "https://github.com/HiLittleCat/react-backbone#readme",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-connect": "^2.2.0"
+  }
+}
