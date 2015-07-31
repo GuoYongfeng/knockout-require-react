@@ -11,10 +11,10 @@ define(['react', 'ko', 'name'], function(React, ko, name){
 		render: function(){
 			return (
 				<div>
-					<h2>请输入：</h2>
-					<p>姓氏: <input data-bind="value: firstName" /></p>  
-					<p>名字: <input data-bind="value: lastName" /></p>  
-					<h2>Hello, <span data-bind="text: fullName"></span>!</h2>
+					<p data-bind="text: name"></p> 
+					<p data-bind="text: job"></p> 
+					Your Name：<input data-bind="value: name"/><br />
+					Your Position：<input data-bind="value: job"/> 
 				</div>
 			);
 		}

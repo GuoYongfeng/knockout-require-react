@@ -9,11 +9,14 @@ require.config({
 		JSXTransformer: 'vendor/react/JSXTransformer',
 		jsx: 'vendor/react/jsx',
 
+		dataTable: 'scripts/viewModels/dataTable',
 		name: 'scripts/viewModels/name',
-		
+		form: 'scripts/viewModels/form',
+
 		index: 'scripts/views/index.react',
 
-		NameComponent: 'scripts/components/NameComponent.react'
+		NameComponent: 'scripts/components/NameComponent.react',
+		FormComponent: 'scripts/components/FormComponent.react'
 	},
 	shim: {
 		jquery: {

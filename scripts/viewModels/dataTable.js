@@ -4,23 +4,22 @@
 		define(["jquery", "ko"], factory );
 	} else {
 		// Browser globals
-		factory($ );
+		factory($, ko);
 	}
 }( function($, ko) {
 
-/* ========================================================================
- * UUI: dataTable.js v1.0.0
- *
- * ========================================================================
- * Copyright 2015 yonyou, Inc.
- * ======================================================================== */
+	/* ========================================================================
+	 * UUI: dataTable.js v1.0.0
+	 *
+	 * ========================================================================
+	 * Copyright 2015 yonyou, Inc.
+	 * ======================================================================== */
 
 	'use strict';
 	
-	var Events = function(){
-	}
+	var Events = function(){};
 	
-	Events.fn = Events.prototype
+	Events.fn = Events.prototype;
 	/**
 	 *绑定事件
 	 */
@@ -61,7 +60,6 @@
 	 * 
 	 * ===========================================================================================================
 	 */
-	
 	var DataTable = function(options){
 		this.id = options['id']
 		this.meta = options['meta']
@@ -906,7 +904,10 @@
 		return utcString; 	
 	}
 
-	$.Row = Row
-	$.DataTable = DataTable
+	return {
+		Events: Events,
+		DataTable: DataTable,
+		Row: Row
+	};
 
 }));
