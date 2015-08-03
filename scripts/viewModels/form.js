@@ -1,10 +1,5 @@
-define(['dataTable', 'ko'], function(dataTable, ko){
+define(['dataTable', 'ko', 'data'], function(dataTable, ko, data){
 	var DataTable = dataTable.DataTable;
-	
-	var data = {
-		"pageIndex": 1,
-		"pageSize": 10,
-	};
 
 	return new DataTable(data);
 

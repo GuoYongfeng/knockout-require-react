@@ -3,7 +3,8 @@ require.config({
 	paths: {
 		jquery: 'vendor/jquery/jquery-2.1.1.min',
 		ko: 'vendor/knockout/knockout.debug',
-
+		biz: 'vendor/uui/u.biz',
+		
 		text: 'vendor/react/text',
 		react: 'vendor/react/react-with-addons',
 		JSXTransformer: 'vendor/react/JSXTransformer',
@@ -12,11 +13,14 @@ require.config({
 		dataTable: 'scripts/viewModels/dataTable',
 		name: 'scripts/viewModels/name',
 		form: 'scripts/viewModels/form',
+		data: 'scripts/data/data',
 
 		index: 'scripts/views/index.react',
 
 		NameComponent: 'scripts/components/NameComponent.react',
-		FormComponent: 'scripts/components/FormComponent.react'
+		FormComponent: 'scripts/components/FormComponent.react',
+		TodoListComponent: 'scripts/components/TodoListComponent.react',
+		knockoutMixin: 'scripts/data/knockoutMixin.react'
 	},
 	shim: {
 		jquery: {

@@ -3,8 +3,9 @@
 define([
 	'react', 
 	'jsx!NameComponent', 
-	'jsx!FormComponent'
-], function(React, NameComponent, FormComponent){
+	'jsx!FormComponent',
+	'jsx!TodoListComponent'
+], function(React, NameComponent, FormComponent, TodoList){
 	var initialize = function(){
 
 		React.render( 
@@ -16,6 +17,12 @@ define([
 			<FormComponent />, 
 			document.getElementById('dt')
 		);
+
+		React.render(
+			<TodoList todos={[{'item': 'React'}, {'item': 'fis3-uap'}, {'item': 'yeoman'}]} />,
+			document.getElementById('todo')
+		);
+		
 	}
 	
 	return {
